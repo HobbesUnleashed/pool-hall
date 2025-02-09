@@ -191,3 +191,63 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* ---------- Jumbotron ---------- */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+    color: #a7a7a7;
+    margin: 25px 0;
+}
+
+.jumbotron .lead--white {
+    color: white;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
+
+/* ---------- Links ---------- */
+
+.sites a {
+    text-decoration: none;
+}
+
+.sites .ed {
+    color: black;
+}
+
+.sites .hol {
+    color: white;
+}
+
+/* ---------- Block Dividers ---------- */
+
+.block-divider {
+    width: 150px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--short {
+    width: 35px;
+    height: 2px;
+    border: 0;
+}
