@@ -396,3 +396,13 @@ a:hover {
     align-items: center;
     text-align: center;
 }
+
+/* ---------- Membership body ---------- */
+
+.members-body {
+    margin: 45px 0;
+}
+
+.members-body li {
+    list-style-type: circle;
+}
