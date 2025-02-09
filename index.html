@@ -43,5 +43,87 @@
       href="assets/favicon/favicon-16x16.png"
     />
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar navbar-light navbar-expand-sm">
+      <a href="index.html" class="navbar-brand"
+        ><img src="assets/images/pool-hall.png" alt="Logo" class="nav-logo" />
+        Pool Hall</a
+      >
+
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="active nav-item mr-2">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="membership.html">Membership</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Locations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="holloway.html">Holloway</a>
+              <a class="dropdown-item" href="edmonton.html">Edmonton</a>
+            </div>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a
+              class="nav-link"
+              href="#contactModal"
+              class="btn btn--cta btn--white contactModals"
+              data-toggle="modal"
+              >Contact us</a
+            >
+          </li>
+
+          <li class="nav-item mr-2 d-block d-sm-none">
+            <button
+              class="btn btn--cta btn--grey"
+              data-toggle="modal"
+              data-target="#reserveModal"
+            >
+              Request a table
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="d-none d-md-block">
+        <p class="navbar-text my-auto mr-2">
+          <i>Your home for Pool and Snooker</i>
+        </p>
+
+        <button
+          class="btn btn--cta btn--grey"
+          data-toggle="modal"
+          data-target="#reserveModal"
+        >
+          Request a table
+        </button>
+      </div>
+    </nav>
+  </body>
 </html>
