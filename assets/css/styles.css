@@ -219,6 +219,18 @@ body {
     color: #d0d0d0;
 }
 
+/* ---------- Page Header ---------- */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
 /* ---------- Links ---------- */
 
 .sites a {
@@ -251,3 +263,67 @@ body {
     height: 2px;
     border: 0;
 }
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: grey;
+    color: #fafafa;
+    min-height: 80px;
+    margin: 0;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 40px;
+    line-height: 7px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links .youtube a i:hover {
+    background-color: #FF0000;
+    color: rgba(0,0,0,.75);
+}
+
+.social-links .facebook a i:hover {
+    background-color: #0865FF;
+    color: rgba(0,0,0,.75);
+}
+
+.social-links .instagram a i:hover {
+    background-image: linear-gradient(45deg, #FCA008, #FA315E, #F21DC7);
+    color: rgba(0,0,0,.75);
+}
+
+.social-links .twitter a i:hover {
+    background-color: #1DA1F2;
+    color: rgba(0,0,0,.75);
+}
+
+.owner {
+    margin: auto;
+    text-align: center;
+}
+
+.owner small {
+    font-size: 12px;
+}
+
+.rnb-logo {
+    max-width: 50px;
+}
+
