@@ -159,3 +159,35 @@ body {
 .center-clubs {
     margin: auto;
 }
+
+/* ---------- Containers ---------- */
+
+.callout-container {
+    height: 75vh;
+
+    background: url('../images/snooker.jpg') no-repeat bottom center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
