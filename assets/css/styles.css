@@ -342,4 +342,9 @@ footer {
     font-size: 12px;
 }
 
+/* ---------- Home body ---------- */
+
+.index-body {
+    margin: 45px 0;
+}
 
