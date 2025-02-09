@@ -151,6 +151,32 @@
         })
         .catch((error) => console.error("Error fetching modals HTML:", error));
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#date").datepicker({
+          format: "dd/mm/yyyy",
+          autoclose: true,
+          todayHighlight: true,
+        });
+        $("#timepicker").datetimepicker({
+          format: "hh:mm", // Set format to hh:mm
+          icons: {
+            time: "fa fa-clock",
+            date: "fa fa-calendar",
+            up: "fa fa-chevron-up",
+            down: "fa fa-chevron-down",
+            previous: "fa fa-chevron-left",
+            next: "fa fa-chevron-right",
+            today: "fa fa-sun",
+            clear: "fa fa-trash",
+            close: "fa fa-times",
+          },
+        });
+      });
+    </script>
     <!-- /JavaScript -->
   </body>
 </html>
