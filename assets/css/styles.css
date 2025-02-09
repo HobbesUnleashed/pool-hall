@@ -178,18 +178,20 @@ body {
     justify-content: center;
 
     position: relative;
+    padding: 0;
 }
 
 .callout-container{
-    background: url('../images/snooker.jpg') no-repeat bottom center fixed;
+    height: 80vh;
+    background: url('../images/snooker.jpg') no-repeat center center fixed;
 }
 
 .holloway-callout-container {
-    background: url('../images/holloway_tables.jpeg') no-repeat bottom center fixed;
+    background: url('../images/holloway_tables.jpeg') no-repeat center center fixed;
 }
 
 .edmonton-callout-container {
-    background: url('../images/edmonton_tables.jpg') no-repeat bottom center fixed;
+    background: url('../images/edmonton_tables.jpg') no-repeat center center fixed;
 }
 
 .membership-callout-container {
@@ -215,17 +217,20 @@ body {
 
 .jumbotron {
     background-color: transparent;
+    padding: 0px;
 }
 
-.jumbotron h1 {
+.jumbotron h1,
+.jumbotron h2 {
     color: white;
     font-weight: bold;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
 }
 
 .jumbotron .lead {
     color: #a7a7a7;
     margin: 25px 0;
+    font-size: 18px;
 }
 
 .jumbotron .lead--white {
@@ -447,4 +452,37 @@ a:hover {
 
 .comparison-table td {
     text-align: center;
+}
+
+/* ---------- Media Queries ---------- */
+
+@media (min-width: 758px) {
+    .mobile-gap {
+        margin-bottom: 0;
+    }
+
+    .tile-titles {
+        margin-bottom: 50px;
+    }
+
+    .image-tile {
+        margin-bottom: 50px;
+    }
+
+
+    .jumbotron h1,
+    .jumbotron h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 982px) {
+
+    .tile-titles {
+        margin-bottom: 30px;
+    }
+
+    .image-tile {
+        margin-bottom: 30px;
+    }
 }
