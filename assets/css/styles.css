@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- Navbar ---------- */
+
+.nav-logo {
+    height: 40px;
+    width:40px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: red;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:active:focus,
+.navbar-light .navbar-nav .active .nav-link {
+    color: grey;
+}
+
+.dropdown-item {
+    color: red;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:active:focus,
+.dropdown-item.active {
+    color: grey;
+    background-color: white;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 15px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+.btn--yellow {
+    color: black;
+    background-color: yellow;
+    border-color: yellow;
+}
+
+.btn--yellow:hover,
+.btn--yellow:active,
+.btn--yellow:focus,
+.btn--yellow:active:focus {
+    background-color: yellow;
+    border-color: yellow;
+    color: black;
+}
+
+.btn--grey {
+    color: white;
+    background-color: grey;
+    border-color: grey;
+}
+
+.btn--white {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+.btn--grey:hover,
+.btn--grey:active,
+.btn--grey:focus,
+.btn--grey:active:focus {
+    background-color: grey;
+    border-color: grey;
+    color: white;
+}
+
+.btn-gap {
+    width: 100px;
+    height: 100px;
+}
