@@ -406,3 +406,45 @@ a:hover {
 .members-body li {
     list-style-type: circle;
 }
+
+.comparisons {
+    text-align: center;
+    font-size:26px;
+    font-weight: 600;
+}
+
+.table-bordered {
+    border: 3px solid black;
+}
+
+.table th {
+    background-color: #343a40;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table th.table-head {
+    background-color: black;
+    color: #fff;
+}
+
+.table th.table-row {
+    color: white;
+}
+
+.table th.spots {
+    background-color: #82AC19;
+}
+
+.table th.hurricane {
+    background-color: #30925C;
+}
+
+.table th.pool-hall {
+    background-color: #314DB5;
+}
+
+.comparison-table td {
+    text-align: center;
+}
