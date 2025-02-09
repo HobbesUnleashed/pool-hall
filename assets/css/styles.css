@@ -162,10 +162,12 @@ body {
 
 /* ---------- Containers ---------- */
 
-.callout-container {
+.callout-container,
+.holloway-callout-container,
+.edmonton-callout-container,
+.membership-callout-container {
     height: 75vh;
 
-    background: url('../images/snooker.jpg') no-repeat bottom center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -176,6 +178,23 @@ body {
     justify-content: center;
 
     position: relative;
+}
+
+.callout-container{
+    background: url('../images/snooker.jpg') no-repeat bottom center fixed;
+}
+
+.holloway-callout-container {
+    background: url('../images/holloway_tables.jpeg') no-repeat bottom center fixed;
+}
+
+.edmonton-callout-container {
+    background: url('../images/edmonton_tables.jpg') no-repeat bottom center fixed;
+}
+
+.membership-callout-container {
+    height: 60vh;
+    background: url('../images/membership.png') no-repeat center center fixed;
 }
 
 .logo {
