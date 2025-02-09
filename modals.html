@@ -1,188 +1,201 @@
-<!-- Modal contact -->
-<div
-  class="modal fade"
-  id="contactModal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="contactModal"
-  aria-hidden="true"
->
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">
-          Choose the club you want to contact
-        </h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col col-lg-6">
-            <a href="holloway.html" class="hol"
-              ><button
-                type="button"
-                class="btn btn-lg btn--cta btn--red sites mb-3 center-clubs"
-              >
-                Holloway
-              </button></a
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <title>Modals</title>
+  </head>
+  <body>
+    <!-- Modal contact -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Choose the club you want to contact
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
             >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="col col-lg-6">
-            <a href="edmonton.html" class="ed"
-              ><button
-                type="button"
-                class="btn btn-lg btn--cta btn--yellow sites mb-3 center-clubs"
-              >
-                Edmonton
-              </button></a
-            >
+          <div class="modal-body">
+            <div class="row">
+              <div class="col col-lg-6">
+                <a href="holloway.html" class="hol"
+                  ><button
+                    type="button"
+                    class="btn btn-lg btn--cta btn--red sites mb-3 center-clubs"
+                  >
+                    Holloway
+                  </button></a
+                >
+              </div>
+              <div class="col col-lg-6">
+                <a href="edmonton.html" class="ed"
+                  ><button
+                    type="button"
+                    class="btn btn-lg btn--cta btn--yellow sites mb-3 center-clubs"
+                  >
+                    Edmonton
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- /Modal contact -->
+    <!-- /Modal contact -->
 
-<!-- Modal -->
-<div class="modal" tabindex="-1" role="dialog" id="reserveModal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Request a table</h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="membershipDeets">
-          Check out the Membership page prior to requesting a table
-        </p>
-        <small id="requiredFields" class="form-text text-muted"
-          >All the fields below are required for your query - Except the
-          comments!</small
-        >
-        <form>
-          <div class="form-group">
-            <label for="clubChoice">Select the club</label>
-            <select class="form-control" id="clubChoice" required>
-              <option>Holloway</option>
-              <option>Edmonton</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="gameChoice">Select your game</label>
-            <select class="form-control" id="gameChoice" required>
-              <option>English Pool</option>
-              <option>Snooker</option>
-              <option>American Pool</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="firstName"
-              placeholder="First Name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="lastName"
-              placeholder="Last Name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="emailAddress">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="emailAddress"
-              placeholder="Enter email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="phoneNumber">Phone Number</label>
-            <input
-              type="tel"
-              class="form-control"
-              id="phoneNumber"
-              placeholder="+44 123 456 7890"
-              aria-describedby="detailsHelp"
-              required
-            />
-            <small id="detailsHelp" class="form-text text-muted"
-              >We'll never share your personal contact details with anyone
-              else.</small
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="reserveModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Request a table</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
             >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="row">
-            <div class="form-group col-6">
-              <label for="date">Select Date</label>
-              <input
-                type="text"
-                class="form-control"
-                id="date"
-                placeholder="DD/MM/YYYY"
-              />
-            </div>
-            <div class="form-group col-6">
-              <label for="time">Enter Time</label>
-              <div
-                class="input-group date"
-                id="timepicker"
-                data-target-input="nearest"
-              >
+          <div class="modal-body">
+            <p class="membershipDeets">
+              Check out the Membership page prior to requesting a table
+            </p>
+            <small class="membershipDeets"
+              >*Tables can only be held for up to 15 minutes after the requested
+              time*</small
+            >
+            <small id="requiredFields" class="form-text text-muted"
+              >All the fields below are required for your query - Except the
+              comments!</small
+            >
+            <form>
+              <div class="form-group">
+                <label for="clubChoice">Select the club</label>
+                <select class="form-control" id="clubChoice" required>
+                  <option>Holloway</option>
+                  <option>Edmonton</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="gameChoice">Select your game</label>
+                <select class="form-control" id="gameChoice" required>
+                  <option>English Pool</option>
+                  <option>Snooker</option>
+                  <option>American Pool</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="firstName">First Name</label>
                 <input
                   type="text"
-                  class="form-control datetimepicker-input"
-                  data-target="#timepicker"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="First Name"
                   required
                 />
-                <div
-                  class="input-group-append"
-                  data-target="#timepicker"
-                  data-toggle="datetimepicker"
-                ></div>
               </div>
-            </div>
-            <div class="form-group col-12">
-              <label for="reserveComments">Comments</label>
-              <input
-                type="text"
-                class="form-control"
-                id="reserveComments"
-                placeholder="Want a specific table - let us know here"
-              />
-              <small id="reservationComments" class="form-text text-muted"
-                >While we will try to accomodate your request it may not be
-                possible</small
-              >
-            </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="emailAddress">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailAddress"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="+44 123 456 7890"
+                  aria-describedby="detailsHelp"
+                  required
+                />
+                <small id="detailsHelp" class="form-text text-muted"
+                  >We'll never share your personal contact details with anyone
+                  else.</small
+                >
+              </div>
+              <div class="row">
+                <div class="form-group col-6">
+                  <label for="date">Enter Date</label>
+                  <input
+                    type="text"
+                    id="date"
+                    class="form-control"
+                    placeholder="Pick a date"
+                    required
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <label for="text">Select Time</label>
+                  <div
+                    class="input-group date"
+                    id="timepicker"
+                    data-target-input="nearest"
+                  >
+                    <input
+                      type="time"
+                      class="form-control datetimepicker-input"
+                      data-target="#timepicker"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group col-12">
+                  <label for="reserveComments">Comments</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="reserveComments"
+                    placeholder="Want a specific table - let us know here"
+                  />
+                  <small id="reservationComments" class="form-text text-muted"
+                    >While we will try to accomodate your request it may not be
+                    possible</small
+                  >
+                </div>
+              </div>
+              <button type="submit" class="btn btn--cta btn--grey">
+                Submit
+              </button>
+            </form>
           </div>
-          <button type="submit" class="btn btn--cta btn--grey">Submit</button>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- /Modal -->
+    <!-- /Modal -->
+  </body>
+</html>

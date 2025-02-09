@@ -41,11 +41,11 @@
       sizes="16x16"
       href="assets/favicon/favicon-16x16.png"
     />
-    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
     <title>Pool Hall</title>
   </head>
   <body>
-
+    
     <!-- nav -->
     <nav class="navbar navbar-light navbar-expand-sm">
       <a href="index.html" class="navbar-brand"
@@ -227,55 +227,7 @@
       <!-- /Footer -->
 
     <!-- JavaScript -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      fetch("modals.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.body.insertAdjacentHTML("beforeend", data);
-        })
-        .catch((error) => console.error("Error fetching modals HTML:", error));
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#date").datepicker({
-          format: "dd/mm/yyyy",
-          autoclose: true,
-          todayHighlight: true,
-        });
-        $("#timepicker").datetimepicker({
-          format: "hh:mm", // Set format to hh:mm
-          icons: {
-            time: "fa fa-clock",
-            date: "fa fa-calendar",
-            up: "fa fa-chevron-up",
-            down: "fa fa-chevron-down",
-            previous: "fa fa-chevron-left",
-            next: "fa fa-chevron-right",
-            today: "fa fa-sun",
-            clear: "fa fa-trash",
-            close: "fa fa-times",
-          },
-        });
-      });
-    </script>
-    <!-- /JavaScript -->
+    <script src="scripts.js" defer></script>
+    <!-- JavaScript -->
   </body>
 </html>
