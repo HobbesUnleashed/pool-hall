@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
     <title>Modals</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "eU5YT2xKK9cYnRMZf",
+        });
+      })();
+    </script>
   </head>
   <body>
     <!-- Modal contact -->
@@ -87,17 +98,27 @@
               >All the fields below are required for your query - Except the
               comments!</small
             >
-            <form>
+            <form id="multi-email-form">
               <div class="form-group">
                 <label for="clubChoice">Select the club</label>
-                <select class="form-control" id="clubChoice" required>
+                <select
+                  class="form-control"
+                  id="clubChoice"
+                  name="clubChoice"
+                  required
+                >
                   <option>Holloway</option>
                   <option>Edmonton</option>
                 </select>
               </div>
               <div class="form-group">
                 <label for="gameChoice">Select your game</label>
-                <select class="form-control" id="gameChoice" required>
+                <select
+                  class="form-control"
+                  id="gameChoice"
+                  name="gameChoice"
+                  required
+                >
                   <option>English Pool</option>
                   <option>Snooker</option>
                   <option>American Pool</option>
@@ -109,6 +130,7 @@
                   type="text"
                   class="form-control"
                   id="firstName"
+                  name="firstName"
                   placeholder="First Name"
                   required
                 />
@@ -119,6 +141,7 @@
                   type="text"
                   class="form-control"
                   id="lastName"
+                  name="lastName"
                   placeholder="Last Name"
                   required
                 />
@@ -129,6 +152,7 @@
                   type="email"
                   class="form-control"
                   id="emailAddress"
+                  name="emailAddress"
                   placeholder="Enter email"
                   required
                 />
@@ -139,6 +163,7 @@
                   type="tel"
                   class="form-control"
                   id="phoneNumber"
+                  name="phoneNumber"
                   placeholder="+44 123 456 7890"
                   aria-describedby="detailsHelp"
                   required
@@ -154,6 +179,7 @@
                   <input
                     type="text"
                     id="date"
+                    name="date"
                     class="form-control"
                     placeholder="Pick a date"
                     required
@@ -164,6 +190,7 @@
                   <div
                     class="input-group date"
                     id="timepicker"
+                    name="timePicker"
                     data-target-input="nearest"
                   >
                     <input
@@ -180,6 +207,7 @@
                     type="text"
                     class="form-control"
                     id="reserveComments"
+                    name="reserveComments"
                     placeholder="Want a specific table - let us know here"
                   />
                   <small id="reservationComments" class="form-text text-muted"
@@ -197,5 +225,6 @@
       </div>
     </div>
     <!-- /Modal -->
+    <script src="assets/js/send.js"></script>
   </body>
 </html>

@@ -43,8 +43,19 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
     <title>Pool Hall</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init(
+          publicKey: "eU5YT2xKK9cYnRMZf",
+        );
+      })();
+    </script>
   </head>
-  <body>
+  <body onload="initMap()">
     <!-- nav -->
     <nav class="navbar navbar-light navbar-expand-sm">
       <a href="index.html" class="navbar-brand"
@@ -149,8 +160,117 @@
     <!-- /.callout -->
 
     <!-- map -->
-    <div id="map"></div>
+    <secion class="container">
+      <div id="map"></div>
+    </secion>
     <!-- /.map -->
+
+    <form id="multi-email-form">
+      <div class="form-group">
+        <label for="clubChoice">Select the club</label>
+        <select class="form-control" id="clubChoice" name="clubChoice" required>
+          <option>Holloway</option>
+          <option>Edmonton</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="gameChoice">Select your game</label>
+        <select class="form-control" id="gameChoice" name="gameChoice" required>
+          <option>English Pool</option>
+          <option>Snooker</option>
+          <option>American Pool</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          name="firstName"
+          placeholder="First Name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          name="lastName"
+          placeholder="Last Name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="emailAddress">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="emailAddress"
+          name="emailAddress"
+          placeholder="Enter email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="+44 123 456 7890"
+          aria-describedby="detailsHelp"
+          required
+        />
+        <small id="detailsHelp" class="form-text text-muted"
+          >We'll never share your personal contact details with anyone
+          else.</small
+        >
+      </div>
+      <div class="row">
+        <div class="form-group col-6">
+          <label for="date">Enter Date</label>
+          <input
+            type="text"
+            id="date"
+            name="date"
+            class="form-control"
+            placeholder="Pick a date"
+            required
+          />
+        </div>
+        <div class="form-group col-6">
+          <label for="text">Enter Time</label>
+          <div class="input-group date" data-target-input="nearest">
+            <input
+              type="time"
+              id="time"
+              name="time"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group col-12">
+          <label for="reserveComments">Comments</label>
+          <input
+            type="text"
+            class="form-control"
+            id="reserveComments"
+            name="reserveComments"
+            placeholder="Want a specific table - let us know here"
+          />
+          <small id="reservationComments" class="form-text text-muted"
+            >While we will try to accomodate your request it may not be
+            possible</small
+          >
+        </div>
+      </div>
+      <button type="submit" class="btn btn--cta btn--grey">Submit</button>
+    </form>
 
     <!-- Footer -->
     <footer class="container-fluid">
@@ -211,6 +331,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClQFBNYWwhGYn3pleIfnaQQ0NocAFGzOo&callback=initMap"
     ></script>
     <script src="assets/js/maps.js"></script>
+    <script src="assets/js/send.js"></script>
     <!-- JavaScript -->
   </body>
 </html>

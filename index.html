@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
     <title>Pool Hall</title>
   </head>
-  <body>
+  <body onload="mapAPI(); initMap();">
     
     <!-- nav -->
     <nav class="navbar navbar-light navbar-expand-sm">
@@ -225,6 +225,10 @@
         </div>
       </section>
       <!-- /Main body -->
+
+      <section class="container">
+        <div id="map"></div>
+      </section>
     
     <!-- Footer -->
     <footer class="container-fluid">
@@ -279,6 +283,7 @@
 
     <!-- JavaScript -->
     <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/maps.js"></script>
     <!-- JavaScript -->
   </body>
 </html>

@@ -455,9 +455,11 @@ a:hover {
 }
 
 /* ---------- Maps ---------- */
+
 #map {
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 70%;
+    margin: auto;
 }
 
 /* ---------- Media Queries ---------- */
